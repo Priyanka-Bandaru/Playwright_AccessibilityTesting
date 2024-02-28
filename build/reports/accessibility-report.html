@@ -1,0 +1,2166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <style>
+            .violationCard {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            .violationCardLine {
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+            }
+            .learnMore {
+                margin-bottom: 0.75rem;
+                white-space: nowrap;
+                color: #2557a7;
+            }
+            .card-link {
+                color: #2557a7;
+            }
+            .violationNode {
+                font-size: 0.75rem;
+            }
+            .wrapBreakWord {
+                word-break: break-word;
+            }
+            .summary {
+                font-size: 1rem;
+            }
+            .summarySection {
+                margin: 0.5rem 0;
+            }
+            .hljs {
+                white-space: pre-wrap;
+                width: 100%;
+                background: #f0f0f0;
+            }
+            p {
+                margin-top: 0.3rem;
+            }
+            li {
+                line-height: 1.618;
+            }
+        </style>
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/stackoverflow-light.min.css"
+        />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <link
+            rel="icon"
+            href="https://www.deque.com/wp-content/uploads/2018/03/cropped-DQ_SecondaryLogo_HeroBlue_RGB-1-32x32.png"
+            sizes="32x32"
+        />
+        <title>AXE Accessibility Results</title>
+    </head>
+    <body>
+        <div style="padding: 2rem">
+            <h3>
+                AXE Accessibility Results for homepage project
+            </h3>
+            <div class="summarySection">
+                <div class="summary">
+                    Page URL:
+                    <a href="https:&#x2F;&#x2F;www.gcreddy.com&#x2F;2021&#x2F;08&#x2F;healthcare-domain-knowledge.html" target="_blank" class="card-link">https:&#x2F;&#x2F;www.gcreddy.com&#x2F;2021&#x2F;08&#x2F;healthcare-domain-knowledge.html</a>
+                    <br />
+                </div>
+            </div>
+            <h5>axe-core found <span class="badge badge-warning">30</span> violations</h5>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th style="width: 5%">#</th>
+                        <th style="width: 45%">Description</th>
+                        <th style="width: 15%">Axe rule ID</th>
+                        <th style="width: 23%">WCAG</th>
+                        <th style="width: 7%">Impact</th>
+                        <th style="width: 5%">Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a href="#1" class="card-link">1</a></th>
+                        <td>ARIA commands must have an accessible name</td>
+                        <td>aria-command-name</td>
+                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                        <td>serious</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#2" class="card-link">2</a></th>
+                        <td>Elements must only use permitted ARIA attributes</td>
+                        <td>aria-prohibited-attr</td>
+                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                        <td>serious</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#3" class="card-link">3</a></th>
+                        <td>Elements must meet minimum color contrast ratio thresholds</td>
+                        <td>color-contrast</td>
+                        <td>WCAG 2 Level AA, WCAG 1.4.3</td>
+                        <td>serious</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#4" class="card-link">4</a></th>
+                        <td>Frames must have an accessible name</td>
+                        <td>frame-title</td>
+                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                        <td>serious</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#5" class="card-link">5</a></th>
+                        <td>Heading levels should only increase by one</td>
+                        <td>heading-order</td>
+                        <td>Best practice</td>
+                        <td>moderate</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#6" class="card-link">6</a></th>
+                        <td>Alternative text of images should not be repeated as text</td>
+                        <td>image-redundant-alt</td>
+                        <td>Best practice</td>
+                        <td>minor</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#7" class="card-link">7</a></th>
+                        <td>Ensures landmarks are unique</td>
+                        <td>landmark-unique</td>
+                        <td>Best practice</td>
+                        <td>moderate</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#8" class="card-link">8</a></th>
+                        <td>Links must have discernible text</td>
+                        <td>link-name</td>
+                        <td>WCAG 2 Level A, WCAG 2.4.4, WCAG 4.1.2</td>
+                        <td>serious</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#9" class="card-link">9</a></th>
+                        <td>All page content should be contained by landmarks</td>
+                        <td>region</td>
+                        <td>Best practice</td>
+                        <td>moderate</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Failed</h3>
+            <div class="card violationCard">
+                <div class="card-body">
+                    <div class="violationCardLine">
+                        <h5 class="card-title violationCardTitleItem">
+                            <a id="1">1.</a> ARIA commands must have an accessible name
+                        </h5>
+                        <a
+                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.8&#x2F;aria-command-name?application&#x3D;playwright"
+                            target="_blank"
+                            class="card-link violationCardTitleItem learnMore"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted">aria-command-name</h6>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            WCAG 2 Level A, WCAG 4.1.2
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-text">Ensures every ARIA button, link and menuitem has an accessible name</p>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            serious
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Issue Tags: 
+                            <span class="badge bg-light text-dark"> cat.aria </span>
+
+                            <span class="badge bg-light text-dark"> wcag2a </span>
+
+                            <span class="badge bg-light text-dark"> wcag412 </span>
+
+                            <span class="badge bg-light text-dark"> TTv5 </span>
+
+                            <span class="badge bg-light text-dark"> TT6.a </span>
+
+                            <span class="badge bg-light text-dark"> EN-301-549 </span>
+
+                            <span class="badge bg-light text-dark"> EN-9.4.1.2 </span>
+
+                            <span class="badge bg-light text-dark"> ACT </span>
+                        </h6>
+                    </div>
+                    <div class="violationNode">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 2%">#</th>
+                                    <th style="width: 49%">Issue Description</th>
+                                    <th style="width: 49%">
+                                        To solve this violation, you need to...
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_0
+#cbb</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;div id&#x3D;&quot;cbb&quot; class&#x3D;&quot;cbb&quot; tabindex&#x3D;&quot;0&quot; role&#x3D;&quot;button&quot;&gt;&lt;svg xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; xmlns:xlink&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;1999&#x2F;xlink&quot; viewBox&#x3D;&quot;0 0 15 15&quot;&gt;&lt;path d&#x3D;&quot;M3.25,3.25l8.5,8.5M11.75,3.25l-8.5,8.5&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;div&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element does not have text that is visible to screen readers</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element has no title attribute</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_4
+#cbb</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;div id&#x3D;&quot;cbb&quot; class&#x3D;&quot;cbb&quot; tabindex&#x3D;&quot;0&quot; role&#x3D;&quot;button&quot;&gt;&lt;svg xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; xmlns:xlink&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;1999&#x2F;xlink&quot; viewBox&#x3D;&quot;0 0 15 15&quot;&gt;&lt;path d&#x3D;&quot;M3.25,3.25l8.5,8.5M11.75,3.25l-8.5,8.5&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;div&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element does not have text that is visible to screen readers</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element has no title attribute</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_9
+#cbb</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;div id&#x3D;&quot;cbb&quot; class&#x3D;&quot;cbb&quot; tabindex&#x3D;&quot;0&quot; role&#x3D;&quot;button&quot;&gt;&lt;svg xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; xmlns:xlink&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;1999&#x2F;xlink&quot; viewBox&#x3D;&quot;0 0 15 15&quot;&gt;&lt;path d&#x3D;&quot;M3.25,3.25l8.5,8.5M11.75,3.25l-8.5,8.5&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;div&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element does not have text that is visible to screen readers</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element has no title attribute</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card violationCard">
+                <div class="card-body">
+                    <div class="violationCardLine">
+                        <h5 class="card-title violationCardTitleItem">
+                            <a id="2">2.</a> Elements must only use permitted ARIA attributes
+                        </h5>
+                        <a
+                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.8&#x2F;aria-prohibited-attr?application&#x3D;playwright"
+                            target="_blank"
+                            class="card-link violationCardTitleItem learnMore"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted">aria-prohibited-attr</h6>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            WCAG 2 Level A, WCAG 4.1.2
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-text">Ensures ARIA attributes are not prohibited for an element&#39;s role</p>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            serious
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Issue Tags: 
+                            <span class="badge bg-light text-dark"> cat.aria </span>
+
+                            <span class="badge bg-light text-dark"> wcag2a </span>
+
+                            <span class="badge bg-light text-dark"> wcag412 </span>
+
+                            <span class="badge bg-light text-dark"> EN-301-549 </span>
+
+                            <span class="badge bg-light text-dark"> EN-9.4.1.2 </span>
+                        </h6>
+                    </div>
+                    <div class="violationNode">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 2%">#</th>
+                                    <th style="width: 49%">Issue Description</th>
+                                    <th style="width: 49%">
+                                        To solve this violation, you need to...
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_0_host</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;div id&#x3D;&quot;aswift_0_host&quot; style&#x3D;&quot;border: medium; height: 280px; width: 820px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;&quot; tabindex&#x3D;&quot;0&quot; title&#x3D;&quot;Advertisement&quot; aria-label&#x3D;&quot;Advertisement&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  aria-label attribute cannot be used on a div with no valid role attribute.</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_4_host</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;div id&#x3D;&quot;aswift_4_host&quot; style&#x3D;&quot;border: medium; height: 600px; width: 280px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;&quot; tabindex&#x3D;&quot;0&quot; title&#x3D;&quot;Advertisement&quot; aria-label&#x3D;&quot;Advertisement&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  aria-label attribute cannot be used on a div with no valid role attribute.</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_9_host</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;div id&#x3D;&quot;aswift_9_host&quot; style&#x3D;&quot;border: medium !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;&quot; tabindex&#x3D;&quot;0&quot; title&#x3D;&quot;Advertisement&quot; aria-label&#x3D;&quot;Advertisement&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  aria-label attribute cannot be used on a div with no valid role attribute.</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card violationCard">
+                <div class="card-body">
+                    <div class="violationCardLine">
+                        <h5 class="card-title violationCardTitleItem">
+                            <a id="3">3.</a> Elements must meet minimum color contrast ratio thresholds
+                        </h5>
+                        <a
+                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.8&#x2F;color-contrast?application&#x3D;playwright"
+                            target="_blank"
+                            class="card-link violationCardTitleItem learnMore"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted">color-contrast</h6>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            WCAG 2 Level AA, WCAG 1.4.3
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-text">Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds</p>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            serious
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Issue Tags: 
+                            <span class="badge bg-light text-dark"> cat.color </span>
+
+                            <span class="badge bg-light text-dark"> wcag2aa </span>
+
+                            <span class="badge bg-light text-dark"> wcag143 </span>
+
+                            <span class="badge bg-light text-dark"> TTv5 </span>
+
+                            <span class="badge bg-light text-dark"> TT13.c </span>
+
+                            <span class="badge bg-light text-dark"> EN-301-549 </span>
+
+                            <span class="badge bg-light text-dark"> EN-9.1.4.3 </span>
+
+                            <span class="badge bg-light text-dark"> ACT </span>
+                        </h6>
+                    </div>
+                    <div class="violationNode">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 2%">#</th>
+                                    <th style="width: 49%">Issue Description</th>
+                                    <th style="width: 49%">
+                                        To solve this violation, you need to...
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_9
+.ns-8kose-e-12</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;a class&#x3D;&quot;ns-8kose-e-12&quot; data-asoch-targets&#x3D;&quot;ad0,bodyClk&quot; dir&#x3D;&quot;auto&quot; href&#x3D;&quot;https:&#x2F;&#x2F;adclick.g.doubleclick.net&#x2F;aclk?sa&#x3D;l&amp;amp;ai&#x3D;CgM__vuPdZaCrHt2k88EP85aewA2i74yQdvibmNGOEpK-xqKMDhABIOn41Slg5erjA6AB_fLslCnIAQmpAiUYK2Kn50k-qAMByAPLBKoEjwJP0GIXiTZb4pf1ad0KCKAEiN7-hiVgSd47_87-tUPQRjMeTB9agJ1h7sZOlukNRSAtWyjwkFtJJsC566YIM_Y_68iOge1oTwWTBQ3Youpm3P7gzhhKe4O9ghR2FachSlp3Nt8zosPqoKNzMsJtJxAqSboGu5VkVEAPKI_aVfJupstF_ekQL39-LIlCnRHcVMh4XI20pVxyWvPVHe9TocOT9llq69HyOOgp9glHJhh6KES4d3mhRlTcrHMfu0CSc8wKYjR__V2Mu3pdo6X_BdGjQHWkiQLgT2yAIQZrKDgbGD3hYlZunAxnlKQFh_eq6NLk4fYATvdZuHz5OI8Qc0t-52PvzMt4tmz8Fvreh1bQwATM8N6A1QSIBanCpLpOoAYugAf9qr30A6gH2baxAqgHjs4bqAeT2BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gHpr4bqAeaBqgH89EbqAeW2BuoB6qbsQKoB4OtsQKoB-C9sQKoB_-esQKoB9-fsQLYBwDSCCQIgGEQARgfMgKKAjoJgECAwICAgIAISL39wTpY1N7lotDLhAOxCZ5xpHhxQr2JgAoBmAsByAsBgAwBqg0CSU7IDQHYEwPQFQH4FgGAFwE&amp;amp;ae&#x3D;1&amp;amp;gclid&#x3D;EAIaIQobChMIoILmotDLhAMVXdI8Ah1ziwfYEAEYASAAEgLiufD_BwE&amp;amp;num&#x3D;1&amp;amp;cid&#x3D;CAQSTgB7FLtqWbKHiSygY2c93o7mpTQ99YJrcV_NImhWrFCgr2esZpFOFSRF4b4Gm70QFENDKhXf8aBVrCufyoDV19k13Kzn3Rw4NWPoJ_T99BgB&amp;amp;sig&#x3D;AOD64_0RxYuHj9y1PcpWkQwB6vn5Aa8Y9Q&amp;amp;client&#x3D;ca-pub-6294697962052096&amp;amp;rf&#x3D;1&amp;amp;nb&#x3D;7&amp;amp;adurl&#x3D;https:&#x2F;&#x2F;templemedia.co.in&#x2F;%3Fgclid%3DEAIaIQobChMIoILmotDLhAMVXdI8Ah1ziwfYEAEYASAAEgLiufD_BwE&quot; target&#x3D;&quot;_top&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                            </ul>
+                                        </div>
+                                        <p><strong>Related node:</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_9
+#leaderboard</code></pre>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card violationCard">
+                <div class="card-body">
+                    <div class="violationCardLine">
+                        <h5 class="card-title violationCardTitleItem">
+                            <a id="4">4.</a> Frames must have an accessible name
+                        </h5>
+                        <a
+                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.8&#x2F;frame-title?application&#x3D;playwright"
+                            target="_blank"
+                            class="card-link violationCardTitleItem learnMore"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted">frame-title</h6>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            WCAG 2 Level A, WCAG 4.1.2
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-text">Ensures &lt;iframe&gt; and &lt;frame&gt; elements have an accessible name</p>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            serious
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Issue Tags: 
+                            <span class="badge bg-light text-dark"> cat.text-alternatives </span>
+
+                            <span class="badge bg-light text-dark"> wcag2a </span>
+
+                            <span class="badge bg-light text-dark"> wcag412 </span>
+
+                            <span class="badge bg-light text-dark"> section508 </span>
+
+                            <span class="badge bg-light text-dark"> section508.22.i </span>
+
+                            <span class="badge bg-light text-dark"> TTv5 </span>
+
+                            <span class="badge bg-light text-dark"> TT12.d </span>
+
+                            <span class="badge bg-light text-dark"> EN-301-549 </span>
+
+                            <span class="badge bg-light text-dark"> EN-9.4.1.2 </span>
+                        </h6>
+                    </div>
+                    <div class="violationNode">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 2%">#</th>
+                                    <th style="width: 49%">Issue Description</th>
+                                    <th style="width: 49%">
+                                        To solve this violation, you need to...
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_0</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;iframe id&#x3D;&quot;aswift_0&quot; name&#x3D;&quot;aswift_0&quot; style&#x3D;&quot;left:0;position:absolute;top:0;border:0;width:820px;height:280px;&quot; sandbox&#x3D;&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width&#x3D;&quot;820&quot; height&#x3D;&quot;280&quot; frameborder&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; marginheight&#x3D;&quot;0&quot; vspace&#x3D;&quot;0&quot; hspace&#x3D;&quot;0&quot; allowtransparency&#x3D;&quot;true&quot; scrolling&#x3D;&quot;no&quot; src&#x3D;&quot;https:&#x2F;&#x2F;googleads.g.doubleclick.net&#x2F;pagead&#x2F;ads?client&#x3D;ca-pub-6294697962052096&amp;amp;output&#x3D;html&amp;amp;h&#x3D;280&amp;amp;slotname&#x3D;4185075217&amp;amp;adk&#x3D;1504822763&amp;amp;adf&#x3D;1850635622&amp;amp;pi&#x3D;t.ma~as.4185075217&amp;amp;w&#x3D;820&amp;amp;fwrn&#x3D;4&amp;amp;fwrnh&#x3D;100&amp;amp;lmt&#x3D;1671540168&amp;amp;rafmt&#x3D;1&amp;amp;format&#x3D;820x280&amp;amp;url&#x3D;https%3A%2F%2Fwww.gcreddy.com%2F2021%2F08%2Fhealthcare-domain-knowledge.html&amp;amp;fwr&#x3D;0&amp;amp;fwrattr&#x3D;true&amp;amp;rpe&#x3D;1&amp;amp;resp_fmts&#x3D;3&amp;amp;wgl&#x3D;1&amp;amp;dt&#x3D;1709040444394&amp;amp;bpp&#x3D;4&amp;amp;bdt&#x3D;840&amp;amp;idt&#x3D;524&amp;amp;shv&#x3D;r20240221&amp;amp;mjsv&#x3D;m202402220101&amp;amp;ptt&#x3D;9&amp;amp;saldr&#x3D;aa&amp;amp;abxe&#x3D;1&amp;amp;correlator&#x3D;6730288164611&amp;amp;frm&#x3D;20&amp;amp;pv&#x3D;2&amp;amp;ga_vid&#x3D;889956041.1709040445&amp;amp;ga_sid&#x3D;1709040445&amp;amp;ga_hid&#x3D;1882881670&amp;amp;ga_fc&#x3D;1&amp;amp;u_tz&#x3D;330&amp;amp;u_his&#x3D;1&amp;amp;u_h&#x3D;720&amp;amp;u_w&#x3D;1280&amp;amp;u_ah&#x3D;720&amp;amp;u_aw&#x3D;1280&amp;amp;u_cd&#x3D;24&amp;amp;u_sd&#x3D;1&amp;amp;adx&#x3D;40&amp;amp;ady&#x3D;234&amp;amp;biw&#x3D;1280&amp;amp;bih&#x3D;720&amp;amp;scr_x&#x3D;0&amp;amp;scr_y&#x3D;0&amp;amp;eid&#x3D;44759875%2C44759926%2C44759837%2C31081080%2C31081348%2C95325067%2C95325752%2C31081355%2C44795552%2C95322180%2C95324154%2C95324160%2C95325791&amp;amp;oid&#x3D;2&amp;amp;pvsid&#x3D;4363432188447022&amp;amp;tmod&#x3D;1180652728&amp;amp;uas&#x3D;0&amp;amp;nvt&#x3D;1&amp;amp;fc&#x3D;896&amp;amp;brdim&#x3D;4%2C4%2C4%2C4%2C1280%2C0%2C1280%2C720%2C1280%2C720&amp;amp;vis&#x3D;1&amp;amp;rsz&#x3D;%7C%7CeE%7C&amp;amp;abl&#x3D;CS&amp;amp;pfx&#x3D;0&amp;amp;fu&#x3D;128&amp;amp;bc&#x3D;31&amp;amp;bz&#x3D;1&amp;amp;ifi&#x3D;1&amp;amp;uci&#x3D;a!1&amp;amp;fsb&#x3D;1&amp;amp;dtd&#x3D;536&quot; data-google-container-id&#x3D;&quot;a!1&quot; data-load-complete&#x3D;&quot;true&quot; data-google-query-id&#x3D;&quot;CMu32KLQy4QDFTbIPAId5TYMTw&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has no title attribute</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element&#39;s default semantics were not overridden with role&#x3D;&quot;none&quot; or role&#x3D;&quot;presentation&quot;</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_0
+iframe</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;iframe frameborder&#x3D;&quot;0&quot; style&#x3D;&quot;height: 0px; width: 0px; position: absolute;&quot;&gt;&lt;&#x2F;iframe&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has no title attribute</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element&#39;s default semantics were not overridden with role&#x3D;&quot;none&quot; or role&#x3D;&quot;presentation&quot;</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#I0_1709040444435</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;iframe ng-non-bindable&#x3D;&quot;&quot; frameborder&#x3D;&quot;0&quot; hspace&#x3D;&quot;0&quot; marginheight&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; scrolling&#x3D;&quot;no&quot; style&#x3D;&quot;position: static; top: 0px; width: 211px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 48px;&quot; tabindex&#x3D;&quot;0&quot; vspace&#x3D;&quot;0&quot; width&#x3D;&quot;100%&quot; id&#x3D;&quot;I0_1709040444435&quot; name&#x3D;&quot;I0_1709040444435&quot; src&#x3D;&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;subscribe_embed?usegapi&#x3D;1&amp;amp;channelid&#x3D;UCEuff7LmRjqwCwhON9hmBlg&amp;amp;layout&#x3D;full&amp;amp;count&#x3D;default&amp;amp;origin&#x3D;https%3A%2F%2Fwww.gcreddy.com&amp;amp;gsrc&#x3D;3p&amp;amp;ic&#x3D;1&amp;amp;jsh&#x3D;m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.8uXxGUoumbY.O%2Fd%3D1%2Frs%3DAHpOoo96qx3mL4tzGUOa-0q0udyPRqEAoA%2Fm%3D__features__#_methods&#x3D;onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;amp;id&#x3D;I0_1709040444435&amp;amp;_gfid&#x3D;I0_1709040444435&amp;amp;parent&#x3D;https%3A%2F%2Fwww.gcreddy.com&amp;amp;pfname&#x3D;&amp;amp;rpctoken&#x3D;18325468&quot; data-gapiattached&#x3D;&quot;true&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has no title attribute</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element&#39;s default semantics were not overridden with role&#x3D;&quot;none&quot; or role&#x3D;&quot;presentation&quot;</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_4</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;iframe id&#x3D;&quot;aswift_4&quot; name&#x3D;&quot;aswift_4&quot; style&#x3D;&quot;left:0;position:absolute;top:0;border:0;width:280px;height:600px;&quot; sandbox&#x3D;&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width&#x3D;&quot;280&quot; height&#x3D;&quot;600&quot; frameborder&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; marginheight&#x3D;&quot;0&quot; vspace&#x3D;&quot;0&quot; hspace&#x3D;&quot;0&quot; allowtransparency&#x3D;&quot;true&quot; scrolling&#x3D;&quot;no&quot; src&#x3D;&quot;https:&#x2F;&#x2F;googleads.g.doubleclick.net&#x2F;pagead&#x2F;ads?client&#x3D;ca-pub-6294697962052096&amp;amp;output&#x3D;html&amp;amp;h&#x3D;600&amp;amp;slotname&#x3D;6688569927&amp;amp;adk&#x3D;2916653406&amp;amp;adf&#x3D;2675822739&amp;amp;pi&#x3D;t.ma~as.6688569927&amp;amp;w&#x3D;280&amp;amp;fwrn&#x3D;4&amp;amp;fwrnh&#x3D;100&amp;amp;lmt&#x3D;1671540168&amp;amp;rafmt&#x3D;1&amp;amp;format&#x3D;280x600&amp;amp;url&#x3D;https%3A%2F%2Fwww.gcreddy.com%2F2021%2F08%2Fhealthcare-domain-knowledge.html&amp;amp;fwr&#x3D;0&amp;amp;fwrattr&#x3D;true&amp;amp;rpe&#x3D;1&amp;amp;resp_fmts&#x3D;4&amp;amp;wgl&#x3D;1&amp;amp;dt&#x3D;1709040444404&amp;amp;bpp&#x3D;1&amp;amp;bdt&#x3D;852&amp;amp;idt&#x3D;644&amp;amp;shv&#x3D;r20240221&amp;amp;mjsv&#x3D;m202402220101&amp;amp;ptt&#x3D;9&amp;amp;saldr&#x3D;aa&amp;amp;abxe&#x3D;1&amp;amp;prev_fmts&#x3D;820x280&amp;amp;correlator&#x3D;6730288164611&amp;amp;frm&#x3D;20&amp;amp;pv&#x3D;1&amp;amp;ga_vid&#x3D;889956041.1709040445&amp;amp;ga_sid&#x3D;1709040445&amp;amp;ga_hid&#x3D;1882881670&amp;amp;ga_fc&#x3D;1&amp;amp;u_tz&#x3D;330&amp;amp;u_his&#x3D;1&amp;amp;u_h&#x3D;720&amp;amp;u_w&#x3D;1280&amp;amp;u_ah&#x3D;720&amp;amp;u_aw&#x3D;1280&amp;amp;u_cd&#x3D;24&amp;amp;u_sd&#x3D;1&amp;amp;adx&#x3D;920&amp;amp;ady&#x3D;1374&amp;amp;biw&#x3D;1280&amp;amp;bih&#x3D;720&amp;amp;scr_x&#x3D;0&amp;amp;scr_y&#x3D;0&amp;amp;eid&#x3D;44759875%2C44759926%2C44759837%2C31081080%2C31081348%2C95325067%2C95325752%2C31081355%2C44795552%2C95322180%2C95324154%2C95324160%2C95325791&amp;amp;oid&#x3D;2&amp;amp;pvsid&#x3D;4363432188447022&amp;amp;tmod&#x3D;1180652728&amp;amp;uas&#x3D;0&amp;amp;nvt&#x3D;1&amp;amp;fc&#x3D;896&amp;amp;brdim&#x3D;4%2C4%2C4%2C4%2C1280%2C0%2C1280%2C720%2C1280%2C720&amp;amp;vis&#x3D;1&amp;amp;rsz&#x3D;%7C%7CeEbr%7C&amp;amp;abl&#x3D;CS&amp;amp;pfx&#x3D;0&amp;amp;fu&#x3D;128&amp;amp;bc&#x3D;31&amp;amp;bz&#x3D;1&amp;amp;ifi&#x3D;5&amp;amp;uci&#x3D;a!5&amp;amp;btvi&#x3D;1&amp;amp;fsb&#x3D;1&amp;amp;dtd&#x3D;648&quot; data-google-container-id&#x3D;&quot;a!5&quot; data-load-complete&#x3D;&quot;true&quot; data-google-query-id&#x3D;&quot;CO3b36LQy4QDFVYbgwMdJ0QAVQ&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has no title attribute</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element&#39;s default semantics were not overridden with role&#x3D;&quot;none&quot; or role&#x3D;&quot;presentation&quot;</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_4
+iframe</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;iframe frameborder&#x3D;&quot;0&quot; style&#x3D;&quot;height: 0px; width: 0px; position: absolute;&quot;&gt;&lt;&#x2F;iframe&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has no title attribute</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element&#39;s default semantics were not overridden with role&#x3D;&quot;none&quot; or role&#x3D;&quot;presentation&quot;</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_9</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;iframe id&#x3D;&quot;aswift_9&quot; name&#x3D;&quot;aswift_9&quot; style&#x3D;&quot;width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;&quot; sandbox&#x3D;&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width&#x3D;&quot;1005&quot; height&#x3D;&quot;124&quot; frameborder&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; marginheight&#x3D;&quot;0&quot; vspace&#x3D;&quot;0&quot; hspace&#x3D;&quot;0&quot; allowtransparency&#x3D;&quot;true&quot; scrolling&#x3D;&quot;no&quot; src&#x3D;&quot;https:&#x2F;&#x2F;googleads.g.doubleclick.net&#x2F;pagead&#x2F;html&#x2F;r20240221&#x2F;r20110914&#x2F;zrt_lookup_nohtml_fy2021.html?fsb&#x3D;1#RS-1-&amp;amp;adk&#x3D;1812271801&amp;amp;client&#x3D;ca-pub-6294697962052096&amp;amp;fa&#x3D;1&amp;amp;ifi&#x3D;10&amp;amp;uci&#x3D;a!a&amp;amp;btvi&#x3D;2&quot; data-google-container-id&#x3D;&quot;a!a&quot; data-google-query-id&#x3D;&quot;CKCC5qLQy4QDFV3SPAIdc4sH2A&quot; data-load-complete&#x3D;&quot;true&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has no title attribute</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element&#39;s default semantics were not overridden with role&#x3D;&quot;none&quot; or role&#x3D;&quot;presentation&quot;</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_9
+iframe</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;iframe frameborder&#x3D;&quot;0&quot; style&#x3D;&quot;height: 0px; width: 0px; position: absolute;&quot;&gt;&lt;&#x2F;iframe&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has no title attribute</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element&#39;s default semantics were not overridden with role&#x3D;&quot;none&quot; or role&#x3D;&quot;presentation&quot;</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card violationCard">
+                <div class="card-body">
+                    <div class="violationCardLine">
+                        <h5 class="card-title violationCardTitleItem">
+                            <a id="5">5.</a> Heading levels should only increase by one
+                        </h5>
+                        <a
+                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.8&#x2F;heading-order?application&#x3D;playwright"
+                            target="_blank"
+                            class="card-link violationCardTitleItem learnMore"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted">heading-order</h6>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Best practice
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-text">Ensures the order of headings is semantically correct</p>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            moderate
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Issue Tags: 
+                            <span class="badge bg-light text-dark"> cat.semantics </span>
+
+                            <span class="badge bg-light text-dark"> best-practice </span>
+                        </h6>
+                    </div>
+                    <div class="violationNode">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 2%">#</th>
+                                    <th style="width: 49%">Issue Description</th>
+                                    <th style="width: 49%">
+                                        To solve this violation, you need to...
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">h3</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;h3&gt;&lt;span style&#x3D;&quot;color: #000080;&quot;&gt;&lt;strong&gt;Healthcare Domain Knowledge for Software Testers&lt;&#x2F;strong&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Heading order invalid</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card violationCard">
+                <div class="card-body">
+                    <div class="violationCardLine">
+                        <h5 class="card-title violationCardTitleItem">
+                            <a id="6">6.</a> Alternative text of images should not be repeated as text
+                        </h5>
+                        <a
+                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.8&#x2F;image-redundant-alt?application&#x3D;playwright"
+                            target="_blank"
+                            class="card-link violationCardTitleItem learnMore"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted">image-redundant-alt</h6>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Best practice
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-text">Ensure image alternative is not repeated as text</p>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            minor
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Issue Tags: 
+                            <span class="badge bg-light text-dark"> cat.text-alternatives </span>
+
+                            <span class="badge bg-light text-dark"> best-practice </span>
+                        </h6>
+                    </div>
+                    <div class="violationNode">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 2%">#</th>
+                                    <th style="width: 49%">Issue Description</th>
+                                    <th style="width: 49%">
+                                        To solve this violation, you need to...
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">img[alt&#x3D;&quot;SQL Data Types&quot;]</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;img width&#x3D;&quot;75&quot; height&#x3D;&quot;75&quot; src&#x3D;&quot;https:&#x2F;&#x2F;www.gcreddy.com&#x2F;wp-content&#x2F;uploads&#x2F;2013&#x2F;04&#x2F;SQL-Data-Types-150x150.jpg&quot; class&#x3D;&quot;attachment-75x75 size-75x75 wp-post-image&quot; alt&#x3D;&quot;SQL Data Types&quot; loading&#x3D;&quot;lazy&quot; srcset&#x3D;&quot;https:&#x2F;&#x2F;www.gcreddy.com&#x2F;wp-content&#x2F;uploads&#x2F;2013&#x2F;04&#x2F;SQL-Data-Types-150x150.jpg 150w, https:&#x2F;&#x2F;www.gcreddy.com&#x2F;wp-content&#x2F;uploads&#x2F;2013&#x2F;04&#x2F;SQL-Data-Types-160x160.jpg 160w, https:&#x2F;&#x2F;www.gcreddy.com&#x2F;wp-content&#x2F;uploads&#x2F;2013&#x2F;04&#x2F;SQL-Data-Types-320x320.jpg 320w&quot; sizes&#x3D;&quot;(max-width: 75px) 100vw, 75px&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element contains &lt;img&gt; element with alt text that duplicates existing text</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">li:nth-child(2) &gt; a &gt; .attachment-75x75.size-75x75.wp-post-image</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;img width&#x3D;&quot;75&quot; height&#x3D;&quot;75&quot; src&#x3D;&quot;https:&#x2F;&#x2F;www.gcreddy.com&#x2F;wp-content&#x2F;uploads&#x2F;2013&#x2F;01&#x2F;Software-Tester-Job-150x150.jpg&quot; class&#x3D;&quot;attachment-75x75 size-75x75 wp-post-image&quot; alt&#x3D;&quot;Software Tester Job Responsibilities&quot; loading&#x3D;&quot;lazy&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element contains &lt;img&gt; element with alt text that duplicates existing text</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">img[alt&#x3D;&quot;Applications of Java&quot;]</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;img width&#x3D;&quot;75&quot; height&#x3D;&quot;75&quot; src&#x3D;&quot;https:&#x2F;&#x2F;www.gcreddy.com&#x2F;wp-content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;Applications-of-Java-150x150.webp&quot; class&#x3D;&quot;attachment-75x75 size-75x75 wp-post-image&quot; alt&#x3D;&quot;Applications of Java&quot; loading&#x3D;&quot;lazy&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element contains &lt;img&gt; element with alt text that duplicates existing text</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">img[alt&#x3D;&quot;Business Analyst Resume&quot;]</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;img width&#x3D;&quot;75&quot; height&#x3D;&quot;75&quot; src&#x3D;&quot;https:&#x2F;&#x2F;www.gcreddy.com&#x2F;wp-content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;Business-Analyst-Resume-150x150.jpeg&quot; class&#x3D;&quot;attachment-75x75 size-75x75 wp-post-image&quot; alt&#x3D;&quot;Business Analyst Resume&quot; loading&#x3D;&quot;lazy&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element contains &lt;img&gt; element with alt text that duplicates existing text</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">li:nth-child(6) &gt; a &gt; .attachment-75x75.size-75x75.wp-post-image</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;img width&#x3D;&quot;75&quot; height&#x3D;&quot;75&quot; src&#x3D;&quot;https:&#x2F;&#x2F;www.gcreddy.com&#x2F;wp-content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;Selenium-Fresher-Job-Responsibilities-150x150.jpg&quot; class&#x3D;&quot;attachment-75x75 size-75x75 wp-post-image&quot; alt&#x3D;&quot;Selenium Fresher Job Responsibilities&quot; loading&#x3D;&quot;lazy&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element contains &lt;img&gt; element with alt text that duplicates existing text</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">li:nth-child(7) &gt; a &gt; .attachment-75x75.size-75x75.wp-post-image</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;img width&#x3D;&quot;75&quot; height&#x3D;&quot;75&quot; src&#x3D;&quot;https:&#x2F;&#x2F;www.gcreddy.com&#x2F;wp-content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;Selenium-Online-Training-By-G-C-Reddy-150x150.jpg&quot; class&#x3D;&quot;attachment-75x75 size-75x75 wp-post-image&quot; alt&#x3D;&quot;Selenium Online Training By G C Reddy&quot; loading&#x3D;&quot;lazy&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element contains &lt;img&gt; element with alt text that duplicates existing text</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">li:nth-child(8) &gt; a &gt; .attachment-75x75.size-75x75.wp-post-image</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;img width&#x3D;&quot;75&quot; height&#x3D;&quot;75&quot; src&#x3D;&quot;https:&#x2F;&#x2F;www.gcreddy.com&#x2F;wp-content&#x2F;uploads&#x2F;2016&#x2F;05&#x2F;Essentials-for-Software-Testing--150x150.jpg&quot; class&#x3D;&quot;attachment-75x75 size-75x75 wp-post-image&quot; alt&#x3D;&quot;Essentials for a Successful Career in Software Testing&quot; loading&#x3D;&quot;lazy&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element contains &lt;img&gt; element with alt text that duplicates existing text</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">li:nth-child(10) &gt; a &gt; .attachment-75x75.size-75x75.wp-post-image</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;img width&#x3D;&quot;75&quot; height&#x3D;&quot;75&quot; src&#x3D;&quot;https:&#x2F;&#x2F;www.gcreddy.com&#x2F;wp-content&#x2F;uploads&#x2F;2012&#x2F;07&#x2F;Software-Testing-Fresher-CV-150x150.jpg&quot; class&#x3D;&quot;attachment-75x75 size-75x75 wp-post-image&quot; alt&#x3D;&quot;Software Testing Fresher Resume&quot; loading&#x3D;&quot;lazy&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element contains &lt;img&gt; element with alt text that duplicates existing text</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card violationCard">
+                <div class="card-body">
+                    <div class="violationCardLine">
+                        <h5 class="card-title violationCardTitleItem">
+                            <a id="7">7.</a> Ensures landmarks are unique
+                        </h5>
+                        <a
+                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.8&#x2F;landmark-unique?application&#x3D;playwright"
+                            target="_blank"
+                            class="card-link violationCardTitleItem learnMore"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted">landmark-unique</h6>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Best practice
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-text">Landmarks should have a unique role or role&#x2F;label&#x2F;title (i.e. accessible name) combination</p>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            moderate
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Issue Tags: 
+                            <span class="badge bg-light text-dark"> cat.semantics </span>
+
+                            <span class="badge bg-light text-dark"> best-practice </span>
+                        </h6>
+                    </div>
+                    <div class="violationNode">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 2%">#</th>
+                                    <th style="width: 49%">Issue Description</th>
+                                    <th style="width: 49%">
+                                        To solve this violation, you need to...
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#media_image-4</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;aside id&#x3D;&quot;media_image-4&quot; class&#x3D;&quot;widget inner-padding widget_media_image&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable</li>
+                                            </ul>
+                                        </div>
+                                        <p><strong>Related node:</strong></p>
+                                        <pre><code class="css text-wrap">#custom_html-9</code></pre>
+                                        <pre><code class="css text-wrap">#custom_html-14</code></pre>
+                                        <pre><code class="css text-wrap">#media_image-2</code></pre>
+                                        <pre><code class="css text-wrap">#search-2</code></pre>
+                                        <pre><code class="css text-wrap">#custom_html-18</code></pre>
+                                        <pre><code class="css text-wrap">#text-6</code></pre>
+                                        <pre><code class="css text-wrap">#recent-posts-widget-with-thumbnails-2</code></pre>
+                                        <pre><code class="css text-wrap">#custom_html-19</code></pre>
+                                        <pre><code class="css text-wrap">#text-2</code></pre>
+                                        <pre><code class="css text-wrap">#categories-3</code></pre>
+                                        <pre><code class="css text-wrap">#wpp-3</code></pre>
+                                        <pre><code class="css text-wrap">#custom_html-17</code></pre>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card violationCard">
+                <div class="card-body">
+                    <div class="violationCardLine">
+                        <h5 class="card-title violationCardTitleItem">
+                            <a id="8">8.</a> Links must have discernible text
+                        </h5>
+                        <a
+                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.8&#x2F;link-name?application&#x3D;playwright"
+                            target="_blank"
+                            class="card-link violationCardTitleItem learnMore"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted">link-name</h6>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            WCAG 2 Level A, WCAG 2.4.4, WCAG 4.1.2
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-text">Ensures links have discernible text</p>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            serious
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Issue Tags: 
+                            <span class="badge bg-light text-dark"> cat.name-role-value </span>
+
+                            <span class="badge bg-light text-dark"> wcag2a </span>
+
+                            <span class="badge bg-light text-dark"> wcag244 </span>
+
+                            <span class="badge bg-light text-dark"> wcag412 </span>
+
+                            <span class="badge bg-light text-dark"> section508 </span>
+
+                            <span class="badge bg-light text-dark"> section508.22.a </span>
+
+                            <span class="badge bg-light text-dark"> TTv5 </span>
+
+                            <span class="badge bg-light text-dark"> TT6.a </span>
+
+                            <span class="badge bg-light text-dark"> EN-301-549 </span>
+
+                            <span class="badge bg-light text-dark"> EN-9.2.4.4 </span>
+
+                            <span class="badge bg-light text-dark"> EN-9.4.1.2 </span>
+
+                            <span class="badge bg-light text-dark"> ACT </span>
+                        </h6>
+                    </div>
+                    <div class="violationNode">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 2%">#</th>
+                                    <th style="width: 49%">Issue Description</th>
+                                    <th style="width: 49%">
+                                        To solve this violation, you need to...
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_0
+.ns-iwz1u-e-2</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;a class&#x3D;&quot;ns-iwz1u-e-2 svg-anchor&quot; data-asoch-targets&#x3D;&quot;ad0,ochImage&quot; href&#x3D;&quot;https:&#x2F;&#x2F;adclick.g.doubleclick.net&#x2F;aclk?sa&#x3D;l&amp;amp;ai&#x3D;Cqr1zvuPdZcvgELaQ88EP5e2w-AS13qD4df3o7-CZEmQQASDp-NUpYOXq4wOgAefL4M4CyAEJqAMByAPLBKoE-gFP0Ci63iy_mEP1AmCgFknCIDZWz_bWxZbo9ofRy-9XNQZxGj260fAvpU7WGqPKr9G4XX0u3M-wlETcBKEa67ADvLDkRz90sik5od0lGJRW3nRArJbU_BOJ2o0fyzxkrhjFf4kdiF5bibc0GRXeYGFUESfEwqzXmqMDQ0Jg_MeDHMCWS-WPUEfxDoC_vGL9KqJ8d83E5WSfowwRrx65TCx3RgQPL78eguUDMn5lD8dZa_yRAwX7rFgsLPVK5tUhd960YtpRXg8N-MbHsRLkeTDBD6Gz3UVSdATxR6KbV2rwHp7kXf8KovjWfdgd2LP-WAzaBjULrwJy_pXbwASfvP_CxgSIBb-Hj_RNoAYugAeBtJ-xAagH2baxAqgHjs4bqAeT2BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gHpr4bqAeaBqgH89EbqAeW2BuoB6qbsQKoB4OtsQKoB-C9sQKoB_-esQKoB9-fsQLYBwDSCCQIgGEQARgfMgKKAjoJgECAwICAgIAISL39wTpYy5DYotDLhAOxCU9WaZG2UHJQgAoBmAsByAsBgAwBqg0CSU7IDQG4E-QD2BMN0BUBmBYB-BYBgBcB&amp;amp;ae&#x3D;1&amp;amp;gclid&#x3D;EAIaIQobChMIy7fYotDLhAMVNsg8Ah3lNgxPEAEYASAAEgJ71_D_BwE&amp;amp;num&#x3D;1&amp;amp;cid&#x3D;CAQSTwB7FLtqe2V7lH1CQ4vcwcgud_VRvHyf3iIjZDDRTJqtzO82dY_hsknM403Qyu7un3txFukiSOY35dHaTUeEBxpGPBQW0270Iq-PqoWgiY4YAQ&amp;amp;sig&#x3D;AOD64_3UU5punAeHxBQP4XOHJeB2BFzHrw&amp;amp;client&#x3D;ca-pub-6294697962052096&amp;amp;rf&#x3D;1&amp;amp;nb&#x3D;9&amp;amp;adurl&#x3D;https:&#x2F;&#x2F;go.crowdstrike.com&#x2F;2023-gartner-magic-quadrant-for-endpoint-protection-platforms.html%3Futm_source%3Dgoog%26utm_medium%3Ddis%26utm_campaign%3Dcore%26utm_term%3Dpsp_tofu_broad%26utm_content%3Dcrwd-core-apj-ind-en-psp-itdm-rpt-gmq-rda_v3_c1_x-cyber-2023%26gclid%3DEAIaIQobChMIy7fYotDLhAMVNsg8Ah3lNgxPEAEYASAAEgJ71_D_BwE&quot; target&#x3D;&quot;_top&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element is in tab order and does not have accessible text</li>
+                                            </ul>
+                                        </div>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element does not have text that is visible to screen readers</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element has no title attribute</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_0
+.ns-iwz1u-e-9</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;a class&#x3D;&quot;ns-iwz1u-e-9 svg-anchor&quot; data-asoch-targets&#x3D;&quot;ad0,ochLogo&quot; href&#x3D;&quot;https:&#x2F;&#x2F;adclick.g.doubleclick.net&#x2F;aclk?sa&#x3D;l&amp;amp;ai&#x3D;Cqr1zvuPdZcvgELaQ88EP5e2w-AS13qD4df3o7-CZEmQQASDp-NUpYOXq4wOgAefL4M4CyAEJqAMByAPLBKoE-gFP0Ci63iy_mEP1AmCgFknCIDZWz_bWxZbo9ofRy-9XNQZxGj260fAvpU7WGqPKr9G4XX0u3M-wlETcBKEa67ADvLDkRz90sik5od0lGJRW3nRArJbU_BOJ2o0fyzxkrhjFf4kdiF5bibc0GRXeYGFUESfEwqzXmqMDQ0Jg_MeDHMCWS-WPUEfxDoC_vGL9KqJ8d83E5WSfowwRrx65TCx3RgQPL78eguUDMn5lD8dZa_yRAwX7rFgsLPVK5tUhd960YtpRXg8N-MbHsRLkeTDBD6Gz3UVSdATxR6KbV2rwHp7kXf8KovjWfdgd2LP-WAzaBjULrwJy_pXbwASfvP_CxgSIBb-Hj_RNoAYugAeBtJ-xAagH2baxAqgHjs4bqAeT2BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gHpr4bqAeaBqgH89EbqAeW2BuoB6qbsQKoB4OtsQKoB-C9sQKoB_-esQKoB9-fsQLYBwDSCCQIgGEQARgfMgKKAjoJgECAwICAgIAISL39wTpYy5DYotDLhAOxCU9WaZG2UHJQgAoBmAsByAsBgAwBqg0CSU7IDQG4E-QD2BMN0BUBmBYB-BYBgBcB&amp;amp;ae&#x3D;1&amp;amp;gclid&#x3D;EAIaIQobChMIy7fYotDLhAMVNsg8Ah3lNgxPEAEYASAAEgJ71_D_BwE&amp;amp;num&#x3D;1&amp;amp;cid&#x3D;CAQSTwB7FLtqe2V7lH1CQ4vcwcgud_VRvHyf3iIjZDDRTJqtzO82dY_hsknM403Qyu7un3txFukiSOY35dHaTUeEBxpGPBQW0270Iq-PqoWgiY4YAQ&amp;amp;sig&#x3D;AOD64_3UU5punAeHxBQP4XOHJeB2BFzHrw&amp;amp;client&#x3D;ca-pub-6294697962052096&amp;amp;rf&#x3D;1&amp;amp;nb&#x3D;19&amp;amp;adurl&#x3D;https:&#x2F;&#x2F;go.crowdstrike.com&#x2F;2023-gartner-magic-quadrant-for-endpoint-protection-platforms.html%3Futm_source%3Dgoog%26utm_medium%3Ddis%26utm_campaign%3Dcore%26utm_term%3Dpsp_tofu_broad%26utm_content%3Dcrwd-core-apj-ind-en-psp-itdm-rpt-gmq-rda_v3_c1_x-cyber-2023%26gclid%3DEAIaIQobChMIy7fYotDLhAMVNsg8Ah3lNgxPEAEYASAAEgJ71_D_BwE&quot; target&#x3D;&quot;_top&quot; x-overflow-forbidden&#x3D;&quot;xy&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element is in tab order and does not have accessible text</li>
+                                            </ul>
+                                        </div>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element does not have text that is visible to screen readers</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element has no title attribute</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#I0_1709040444435
+a:nth-child(1)</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;a href&#x3D;&quot;&#x2F;channel&#x2F;UCEuff7LmRjqwCwhON9hmBlg&quot; target&#x3D;&quot;_blank&quot; dir&#x3D;&quot;ltr&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element is in tab order and does not have accessible text</li>
+                                            </ul>
+                                        </div>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element does not have text that is visible to screen readers</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element has no title attribute</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_4
+#aw0</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;a class&#x3D;&quot;ns-q6g3o-e-2 image-anchor&quot; data-asoch-targets&#x3D;&quot;ad0,imageClk&quot; href&#x3D;&quot;https:&#x2F;&#x2F;googleads.g.doubleclick.net&#x2F;aclk?sa&#x3D;l&amp;amp;ai&#x3D;C_B-AvuPdZe2EGNa2jMwPp4iBqAW13qD4dbXn7-CZEmQQASDp-NUpYOXq4wOgAefL4M4CyAEBqAMByAPLBKoE_QFP0Nkch47_idI3jRBQELsqRuivoskYXZOhYb6XBcFGxQkCqcPZyGLDrY_aRynYQgT_CR9r1Wnk3xG2YPLfkTjdxj3IQnfsnueKrGWi8lefyGqPulpmtSEthiWymRDmsPRG-x3FTS16SUAO688qCXfKSVn5nSHR6Ob0nkUUTmRQRiLNskDouZhvlRhHTn-JAqH1kjExjoSnrivW4RULehEtwy2AS-GFFcNpX9pgfR6DdK9Lm3zpqVDtKV0bf_KbDfMyfDRafBDzptxjOJB2BOE3Z-Z2vuuO2ox1Bj9bTmPzK0TzfatxwT2RvLs7Q5vXcp_4sFMVk_-pPCSrQoCawASfvP_CxgSIBb-Hj_RNoAYCgAeBtJ-xAagH2baxAqgHjs4bqAeT2BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gHpr4bqAeaBqgH89EbqAeW2BuoB6qbsQKoB4OtsQKoB-C9sQKoB_-esQKoB9-fsQLYBwHSCCQIgGEQARgfMgKKAjoJgECAwICAgIAISL39wTpYw7TfotDLhAOxCTAtw5wB6iNJgAoBmAsByAsBqg0CSU7IDQHYEw3QFQGYFgH4FgGAFwE&amp;amp;ae&#x3D;1&amp;amp;gclid&#x3D;EAIaIQobChMI7dvfotDLhAMVVhuDAx0nRABVEAEYASAAEgKdyPD_BwE&amp;amp;num&#x3D;1&amp;amp;cid&#x3D;CAQSTgB7FLtq9lCe4hld8X7FfJ3TSDO50sP1zpgdwhujIoFM1ljAvo2zKLlTp9C8uWNLcSC09W2OcNzIGziCMjkv_GFiz5Du-Mj3tQc7lD2zFRgB&amp;amp;sig&#x3D;AOD64_2rssrKF33TV9tr-_8t2BXj2yrWog&amp;amp;client&#x3D;ca-pub-6294697962052096&amp;amp;rf&#x3D;1&amp;amp;nb&#x3D;49&amp;amp;adurl&#x3D;https:&#x2F;&#x2F;go.crowdstrike.com&#x2F;2023-gartner-magic-quadrant-for-endpoint-protection-platforms.html%3Futm_source%3Dgoog%26utm_medium%3Ddis%26utm_campaign%3Dcore%26utm_term%3Dpsp_tofu_broad%26utm_content%3Dcrwd-core-apj-ind-en-psp-itdm-rpt-gmq-rda_v1_c1_x-cyber-2023%26gclid%3DEAIaIQobChMI7dvfotDLhAMVVhuDAx0nRABVEAEYASAAEgKdyPD_BwE&quot; id&#x3D;&quot;aw0&quot; target&#x3D;&quot;_top&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element is in tab order and does not have accessible text</li>
+                                            </ul>
+                                        </div>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element does not have text that is visible to screen readers</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element has no title attribute</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#aswift_9
+.ns-8kose-e-2</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;a class&#x3D;&quot;ns-8kose-e-2&quot; data-asoch-targets&#x3D;&quot;ad0,imageClk&quot; href&#x3D;&quot;https:&#x2F;&#x2F;adclick.g.doubleclick.net&#x2F;aclk?sa&#x3D;l&amp;amp;ai&#x3D;CgM__vuPdZaCrHt2k88EP85aewA2i74yQdvibmNGOEpK-xqKMDhABIOn41Slg5erjA6AB_fLslCnIAQmpAiUYK2Kn50k-qAMByAPLBKoEjwJP0GIXiTZb4pf1ad0KCKAEiN7-hiVgSd47_87-tUPQRjMeTB9agJ1h7sZOlukNRSAtWyjwkFtJJsC566YIM_Y_68iOge1oTwWTBQ3Youpm3P7gzhhKe4O9ghR2FachSlp3Nt8zosPqoKNzMsJtJxAqSboGu5VkVEAPKI_aVfJupstF_ekQL39-LIlCnRHcVMh4XI20pVxyWvPVHe9TocOT9llq69HyOOgp9glHJhh6KES4d3mhRlTcrHMfu0CSc8wKYjR__V2Mu3pdo6X_BdGjQHWkiQLgT2yAIQZrKDgbGD3hYlZunAxnlKQFh_eq6NLk4fYATvdZuHz5OI8Qc0t-52PvzMt4tmz8Fvreh1bQwATM8N6A1QSIBanCpLpOoAYugAf9qr30A6gH2baxAqgHjs4bqAeT2BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gHpr4bqAeaBqgH89EbqAeW2BuoB6qbsQKoB4OtsQKoB-C9sQKoB_-esQKoB9-fsQLYBwDSCCQIgGEQARgfMgKKAjoJgECAwICAgIAISL39wTpY1N7lotDLhAOxCZ5xpHhxQr2JgAoBmAsByAsBgAwBqg0CSU7IDQHYEwPQFQH4FgGAFwE&amp;amp;ae&#x3D;1&amp;amp;gclid&#x3D;EAIaIQobChMIoILmotDLhAMVXdI8Ah1ziwfYEAEYASAAEgLiufD_BwE&amp;amp;num&#x3D;1&amp;amp;cid&#x3D;CAQSTgB7FLtqWbKHiSygY2c93o7mpTQ99YJrcV_NImhWrFCgr2esZpFOFSRF4b4Gm70QFENDKhXf8aBVrCufyoDV19k13Kzn3Rw4NWPoJ_T99BgB&amp;amp;sig&#x3D;AOD64_0RxYuHj9y1PcpWkQwB6vn5Aa8Y9Q&amp;amp;client&#x3D;ca-pub-6294697962052096&amp;amp;rf&#x3D;1&amp;amp;nb&#x3D;9&amp;amp;adurl&#x3D;https:&#x2F;&#x2F;templemedia.co.in&#x2F;%3Fgclid%3DEAIaIQobChMIoILmotDLhAMVXdI8Ah1ziwfYEAEYASAAEgLiufD_BwE&quot; target&#x3D;&quot;_top&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element is in tab order and does not have accessible text</li>
+                                            </ul>
+                                        </div>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element does not have text that is visible to screen readers</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element has no title attribute</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card violationCard">
+                <div class="card-body">
+                    <div class="violationCardLine">
+                        <h5 class="card-title violationCardTitleItem">
+                            <a id="9">9.</a> All page content should be contained by landmarks
+                        </h5>
+                        <a
+                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.8&#x2F;region?application&#x3D;playwright"
+                            target="_blank"
+                            class="card-link violationCardTitleItem learnMore"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted">region</h6>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Best practice
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-text">Ensures all page content is contained by landmarks</p>
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            moderate
+                        </h6>
+                    </div>
+                    <div class="violationCardLine">
+                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Issue Tags: 
+                            <span class="badge bg-light text-dark"> cat.keyboard </span>
+
+                            <span class="badge bg-light text-dark"> best-practice </span>
+                        </h6>
+                    </div>
+                    <div class="violationNode">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 2%">#</th>
+                                    <th style="width: 49%">Issue Description</th>
+                                    <th style="width: 49%">
+                                        To solve this violation, you need to...
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">body &gt; .adsbygoogle-noablate[data-ad-status&#x3D;&quot;filled&quot;]</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;ins class&#x3D;&quot;adsbygoogle adsbygoogle-noablate&quot; data-adsbygoogle-status&#x3D;&quot;done&quot; style&#x3D;&quot;display: block; width: 100% !important; height: 129px !important; bottom: -10.2066px; clear: none !important; float: none !important; left: 0px; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1; overflow: visible !important; padding: 0px !important; position: fixed; right: auto !important; top: auto !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483643; background: rgb(250, 250, 250) !important;&quot; data-anchor-status&#x3D;&quot;ready-to-display&quot; data-ad-status&#x3D;&quot;filled&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Some page content is not contained by landmarks</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="accordionPasses">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button
+                                class="btn btn-link"
+                                data-toggle="collapse"
+                                data-target="#passes"
+                                aria-expanded="false"
+                                aria-controls="passes"
+                            >
+                                axe returned 49 passed axe
+                                checks. Expand details on
+                                click
+                            </button>
+                        </h5>
+                    </div>
+                    <div
+                        id="passes"
+                        class="collapse"
+                        aria-labelledby="headingOne"
+                        data-parent="#accordionPasses"
+                    >
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 5%">#</th>
+                                        <th style="width: 40%">Description</th>
+                                        <th style="width: 5%">Axe rule ID</th>
+                                        <th style="width: 15%">WCAG</th>
+                                        <th style="width: 5%">Nodes passed check</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Elements must only use supported ARIA attributes</td>
+                                        <td>aria-allowed-attr</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>13</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>ARIA role should be appropriate for the element</td>
+                                        <td>aria-allowed-role</td>
+                                        <td>Best practice</td>
+                                        <td>12</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>ARIA commands must have an accessible name</td>
+                                        <td>aria-command-name</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>ARIA attributes must be used as specified for the element&#39;s role</td>
+                                        <td>aria-conditional-attr</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>13</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Deprecated ARIA roles must not be used</td>
+                                        <td>aria-deprecated-role</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>4</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>aria-hidden&#x3D;&quot;true&quot; must not be present on the document body</td>
+                                        <td>aria-hidden-body</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>ARIA hidden element must not be focusable or contain focusable elements</td>
+                                        <td>aria-hidden-focus</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>13</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>Elements must only use permitted ARIA attributes</td>
+                                        <td>aria-prohibited-attr</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>7</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>Required ARIA attributes must be provided</td>
+                                        <td>aria-required-attr</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>4</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>ARIA roles used must conform to valid values</td>
+                                        <td>aria-roles</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>4</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">11</th>
+                                        <td>ARIA attributes must conform to valid values</td>
+                                        <td>aria-valid-attr-value</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>13</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">12</th>
+                                        <td>ARIA attributes must conform to valid names</td>
+                                        <td>aria-valid-attr</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>13</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">13</th>
+                                        <td>Inline text spacing must be adjustable with custom stylesheets</td>
+                                        <td>avoid-inline-spacing</td>
+                                        <td>WCAG 2.1 Level AA, WCAG 1.4.1.2</td>
+                                        <td>94</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">14</th>
+                                        <td>Buttons must have discernible text</td>
+                                        <td>button-name</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>2</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">15</th>
+                                        <td>Page must have means to bypass repeated blocks</td>
+                                        <td>bypass</td>
+                                        <td>WCAG 2 Level A, WCAG 2.4.1</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">16</th>
+                                        <td>Elements must meet minimum color contrast ratio thresholds</td>
+                                        <td>color-contrast</td>
+                                        <td>WCAG 2 Level AA, WCAG 1.4.3</td>
+                                        <td>280</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">17</th>
+                                        <td>Documents must have &lt;title&gt; element to aid in navigation</td>
+                                        <td>document-title</td>
+                                        <td>WCAG 2 Level A, WCAG 2.4.2</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">18</th>
+                                        <td>IDs used in ARIA and labels must be unique</td>
+                                        <td>duplicate-id-aria</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">19</th>
+                                        <td>Headings should not be empty</td>
+                                        <td>empty-heading</td>
+                                        <td>Best practice</td>
+                                        <td>24</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">20</th>
+                                        <td>Form field must not have multiple label elements</td>
+                                        <td>form-field-multiple-labels</td>
+                                        <td>WCAG 2 Level A, WCAG 3.3.2</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">21</th>
+                                        <td>Frames should be tested with axe-core</td>
+                                        <td>frame-tested</td>
+                                        <td>Best practice</td>
+                                        <td>7</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">22</th>
+                                        <td>Heading levels should only increase by one</td>
+                                        <td>heading-order</td>
+                                        <td>Best practice</td>
+                                        <td>23</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">23</th>
+                                        <td>&lt;html&gt; element must have a lang attribute</td>
+                                        <td>html-has-lang</td>
+                                        <td>WCAG 2 Level A, WCAG 3.1.1</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">24</th>
+                                        <td>&lt;html&gt; element must have a valid value for the lang attribute</td>
+                                        <td>html-lang-valid</td>
+                                        <td>WCAG 2 Level A, WCAG 3.1.1</td>
+                                        <td>4</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">25</th>
+                                        <td>Images must have alternate text</td>
+                                        <td>image-alt</td>
+                                        <td>WCAG 2 Level A, WCAG 1.1.1</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">26</th>
+                                        <td>Alternative text of images should not be repeated as text</td>
+                                        <td>image-redundant-alt</td>
+                                        <td>Best practice</td>
+                                        <td>26</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">27</th>
+                                        <td>Form elements should have a visible label</td>
+                                        <td>label-title-only</td>
+                                        <td>Best practice</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">28</th>
+                                        <td>Form elements must have labels</td>
+                                        <td>label</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">29</th>
+                                        <td>Banner landmark should not be contained in another landmark</td>
+                                        <td>landmark-banner-is-top-level</td>
+                                        <td>Best practice</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">30</th>
+                                        <td>Aside should not be contained in another landmark</td>
+                                        <td>landmark-complementary-is-top-level</td>
+                                        <td>Best practice</td>
+                                        <td>13</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">31</th>
+                                        <td>Contentinfo landmark should not be contained in another landmark</td>
+                                        <td>landmark-contentinfo-is-top-level</td>
+                                        <td>Best practice</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">32</th>
+                                        <td>Main landmark should not be contained in another landmark</td>
+                                        <td>landmark-main-is-top-level</td>
+                                        <td>Best practice</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">33</th>
+                                        <td>Document should not have more than one banner landmark</td>
+                                        <td>landmark-no-duplicate-banner</td>
+                                        <td>Best practice</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">34</th>
+                                        <td>Document should not have more than one contentinfo landmark</td>
+                                        <td>landmark-no-duplicate-contentinfo</td>
+                                        <td>Best practice</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">35</th>
+                                        <td>Document should not have more than one main landmark</td>
+                                        <td>landmark-no-duplicate-main</td>
+                                        <td>Best practice</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">36</th>
+                                        <td>Document should have one main landmark</td>
+                                        <td>landmark-one-main</td>
+                                        <td>Best practice</td>
+                                        <td>8</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">37</th>
+                                        <td>Ensures landmarks are unique</td>
+                                        <td>landmark-unique</td>
+                                        <td>Best practice</td>
+                                        <td>5</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">38</th>
+                                        <td>Links must be distinguishable without relying on color</td>
+                                        <td>link-in-text-block</td>
+                                        <td>WCAG 2 Level A, WCAG 1.4.1</td>
+                                        <td>3</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">39</th>
+                                        <td>Links must have discernible text</td>
+                                        <td>link-name</td>
+                                        <td>WCAG 2 Level A, WCAG 2.4.4, WCAG 4.1.2</td>
+                                        <td>175</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">40</th>
+                                        <td>&lt;ul&gt; and &lt;ol&gt; must only directly contain &lt;li&gt;, &lt;script&gt; or &lt;template&gt; elements</td>
+                                        <td>list</td>
+                                        <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                        <td>7</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">41</th>
+                                        <td>&lt;li&gt; elements must be contained in a &lt;ul&gt; or &lt;ol&gt;</td>
+                                        <td>listitem</td>
+                                        <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                        <td>125</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">42</th>
+                                        <td>Users should be able to zoom and scale the text up to 500%</td>
+                                        <td>meta-viewport-large</td>
+                                        <td>Best practice</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">43</th>
+                                        <td>Zooming and scaling must not be disabled</td>
+                                        <td>meta-viewport</td>
+                                        <td>WCAG 2 Level AA, WCAG 1.4.4</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">44</th>
+                                        <td>Interactive controls must not be nested</td>
+                                        <td>nested-interactive</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>41</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">45</th>
+                                        <td>Page should contain a level-one heading</td>
+                                        <td>page-has-heading-one</td>
+                                        <td>Best practice</td>
+                                        <td>8</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">46</th>
+                                        <td>All page content should be contained by landmarks</td>
+                                        <td>region</td>
+                                        <td>Best practice</td>
+                                        <td>779</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">47</th>
+                                        <td>The skip-link target should exist and be focusable</td>
+                                        <td>skip-link</td>
+                                        <td>Best practice</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">48</th>
+                                        <td>Elements should not have tabindex greater than zero</td>
+                                        <td>tabindex</td>
+                                        <td>Best practice</td>
+                                        <td>8</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">49</th>
+                                        <td>lang attribute must have a valid value</td>
+                                        <td>valid-lang</td>
+                                        <td>WCAG 2 Level AA, WCAG 3.1.2</td>
+                                        <td>3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="accordionIncomplete">
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button
+                                class="btn btn-link"
+                                data-toggle="collapse"
+                                data-target="#incomplete"
+                                aria-expanded="false"
+                                aria-controls="incomplete"
+                            >
+                                axe returned 3 incomplete checks. Expand
+                                details on click
+                            </button>
+                        </h5>
+                    </div>
+                    <div
+                        id="incomplete"
+                        class="collapse"
+                        aria-labelledby="headingTwo"
+                        data-parent="#accordionIncomplete"
+                    >
+                        <div class="card-body">
+                            <p><em>What 'incomplete' axe checks means?</em></p>
+                            <p>
+                                Incomplete results were aborted and require further testing. This
+                                can happen either because of technical restrictions to what the rule
+                                can test, or because a javascript error occurred.
+                            </p>
+                            <p>
+                                <a
+                                    href="https://www.deque.com/axe/core-documentation/api-documentation/#results-object"
+                                    >Visit axe API Documentation</a
+                                >
+                                to learn more.
+                            </p>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 5%">#</th>
+                                        <th style="width: 50%">Description</th>
+                                        <th style="width: 20%">Axe rule ID</th>
+                                        <th style="width: 15%">WCAG</th>
+                                        <th style="width: 10%">Nodes with incomplete check</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Elements must only use permitted ARIA attributes</td>
+                                        <td>aria-prohibited-attr</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>3</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Elements must meet minimum color contrast ratio thresholds</td>
+                                        <td>color-contrast</td>
+                                        <td>WCAG 2 Level AA, WCAG 1.4.3</td>
+                                        <td>5</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Links must be distinguishable without relying on color</td>
+                                        <td>link-in-text-block</td>
+                                        <td>WCAG 2 Level A, WCAG 1.4.1</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="accordionInapplicable">
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button
+                                class="btn btn-link"
+                                data-toggle="collapse"
+                                data-target="#inapplicable"
+                                aria-expanded="false"
+                                aria-controls="inapplicable"
+                            >
+                                axe returned 38 inapplicable checks.
+                                Expand details on click
+                            </button>
+                        </h5>
+                    </div>
+                    <div
+                        id="inapplicable"
+                        class="collapse"
+                        aria-labelledby="headingThree"
+                        data-parent="#accordionInapplicable"
+                    >
+                        <div class="card-body">
+                            <p><em>What 'inapplicable' axe checks means?</em></p>
+                            <p>
+                                The inapplicable array lists all the rules for which no matching
+                                elements were found on the page.
+                            </p>
+                            <p>
+                                <a
+                                    href="https://www.deque.com/axe/core-documentation/api-documentation/#results-object"
+                                    >Visit axe API Documentation</a
+                                >
+                                to learn more.
+                            </p>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 5%">#</th>
+                                        <th style="width: 50%">Description</th>
+                                        <th style="width: 20%">Axe rule ID</th>
+                                        <th style="width: 15%">WCAG</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>accesskey attribute value should be unique</td>
+                                        <td>accesskeys</td>
+                                        <td>Best practice</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Active &lt;area&gt; elements must have alternate text</td>
+                                        <td>area-alt</td>
+                                        <td>WCAG 2 Level A, WCAG 2.4.4, WCAG 4.1.2</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>aria-braille attributes must have a non-braille equivalent</td>
+                                        <td>aria-braille-equivalent</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>ARIA dialog and alertdialog nodes should have an accessible name</td>
+                                        <td>aria-dialog-name</td>
+                                        <td>Best practice</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>ARIA input fields must have an accessible name</td>
+                                        <td>aria-input-field-name</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>ARIA meter nodes must have an accessible name</td>
+                                        <td>aria-meter-name</td>
+                                        <td>WCAG 2 Level A, WCAG 1.1.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>ARIA progressbar nodes must have an accessible name</td>
+                                        <td>aria-progressbar-name</td>
+                                        <td>WCAG 2 Level A, WCAG 1.1.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>Certain ARIA roles must contain particular children</td>
+                                        <td>aria-required-children</td>
+                                        <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>Certain ARIA roles must be contained by particular parents</td>
+                                        <td>aria-required-parent</td>
+                                        <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>&quot;role&#x3D;text&quot; should have no focusable descendants</td>
+                                        <td>aria-text</td>
+                                        <td>Best practice</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">11</th>
+                                        <td>ARIA toggle fields must have an accessible name</td>
+                                        <td>aria-toggle-field-name</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">12</th>
+                                        <td>ARIA tooltip nodes must have an accessible name</td>
+                                        <td>aria-tooltip-name</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">13</th>
+                                        <td>ARIA treeitem nodes should have an accessible name</td>
+                                        <td>aria-treeitem-name</td>
+                                        <td>Best practice</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">14</th>
+                                        <td>autocomplete attribute must be used correctly</td>
+                                        <td>autocomplete-valid</td>
+                                        <td>WCAG 2.1 Level AA, WCAG 1.3.5</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">15</th>
+                                        <td>&lt;blink&gt; elements are deprecated and must not be used</td>
+                                        <td>blink</td>
+                                        <td>WCAG 2 Level A, WCAG 2.2.2</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">16</th>
+                                        <td>&lt;dl&gt; elements must only directly contain properly-ordered &lt;dt&gt; and &lt;dd&gt; groups, &lt;script&gt;, &lt;template&gt; or &lt;div&gt; elements</td>
+                                        <td>definition-list</td>
+                                        <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">17</th>
+                                        <td>&lt;dt&gt; and &lt;dd&gt; elements must be contained by a &lt;dl&gt;</td>
+                                        <td>dlitem</td>
+                                        <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">18</th>
+                                        <td>Table header text should not be empty</td>
+                                        <td>empty-table-header</td>
+                                        <td>Best practice</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">19</th>
+                                        <td>Frames with focusable content must not have tabindex&#x3D;-1</td>
+                                        <td>frame-focusable-content</td>
+                                        <td>WCAG 2 Level A, WCAG 2.1.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">20</th>
+                                        <td>Frames must have a unique title attribute</td>
+                                        <td>frame-title-unique</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">21</th>
+                                        <td>HTML elements with lang and xml:lang must have the same base language</td>
+                                        <td>html-xml-lang-mismatch</td>
+                                        <td>WCAG 2 Level A, WCAG 3.1.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">22</th>
+                                        <td>Input buttons must have discernible text</td>
+                                        <td>input-button-name</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">23</th>
+                                        <td>Image buttons must have alternate text</td>
+                                        <td>input-image-alt</td>
+                                        <td>WCAG 2 Level A, WCAG 1.1.1, WCAG 4.1.2</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">24</th>
+                                        <td>&lt;marquee&gt; elements are deprecated and must not be used</td>
+                                        <td>marquee</td>
+                                        <td>WCAG 2 Level A, WCAG 2.2.2</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">25</th>
+                                        <td>Delayed refresh under 20 hours must not be used</td>
+                                        <td>meta-refresh</td>
+                                        <td>WCAG 2 Level A, WCAG 2.2.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">26</th>
+                                        <td>&lt;object&gt; elements must have alternate text</td>
+                                        <td>object-alt</td>
+                                        <td>WCAG 2 Level A, WCAG 1.1.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">27</th>
+                                        <td>Ensure elements marked as presentational are consistently ignored</td>
+                                        <td>presentation-role-conflict</td>
+                                        <td>Best practice</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">28</th>
+                                        <td>[role&#x3D;&quot;img&quot;] elements must have an alternative text</td>
+                                        <td>role-img-alt</td>
+                                        <td>WCAG 2 Level A, WCAG 1.1.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">29</th>
+                                        <td>scope attribute should be used correctly</td>
+                                        <td>scope-attr-valid</td>
+                                        <td>Best practice</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">30</th>
+                                        <td>Scrollable region must have keyboard access</td>
+                                        <td>scrollable-region-focusable</td>
+                                        <td>WCAG 2 Level A, WCAG 2.1.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">31</th>
+                                        <td>Select element must have an accessible name</td>
+                                        <td>select-name</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">32</th>
+                                        <td>Server-side image maps must not be used</td>
+                                        <td>server-side-image-map</td>
+                                        <td>WCAG 2 Level A, WCAG 2.1.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">33</th>
+                                        <td>&lt;svg&gt; elements with an img role must have an alternative text</td>
+                                        <td>svg-img-alt</td>
+                                        <td>WCAG 2 Level A, WCAG 1.1.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">34</th>
+                                        <td>tables should not have the same summary and caption</td>
+                                        <td>table-duplicate-name</td>
+                                        <td>Best practice</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">35</th>
+                                        <td>Table cells that use the headers attribute must only refer to cells in the same table</td>
+                                        <td>td-headers-attr</td>
+                                        <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">36</th>
+                                        <td>Table headers in a data table must refer to data cells</td>
+                                        <td>th-has-data-cells</td>
+                                        <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">37</th>
+                                        <td>&lt;video&gt; elements must have captions</td>
+                                        <td>video-caption</td>
+                                        <td>WCAG 2 Level A, WCAG 1.2.2</td>
+                                    </tr>
+                                </tbody>
+                                    <tr>
+                                        <th scope="row">38</th>
+                                        <td>&lt;video&gt; or &lt;audio&gt; elements must not play automatically</td>
+                                        <td>no-autoplay-audio</td>
+                                        <td>WCAG 2 Level A, WCAG 1.4.2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rulesSection">
+                <div class="card">
+                    <div class="card-header" id="ruleSection">
+                        <h5 class="mb-0">
+                            <button
+                                class="btn btn-link"
+                                data-toggle="collapse"
+                                data-target="#rules"
+                                aria-expanded="false"
+                                aria-controls="inapplicable"
+                            >
+                                axe was running with 0 rules. Expand details on click
+                            </button>
+                        </h5>
+                    </div>
+                    <div
+                        id="rules"
+                        class="collapse"
+                        aria-labelledby="ruleSection"
+                        data-parent="#rules"
+                    >
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>
