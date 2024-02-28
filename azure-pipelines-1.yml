@@ -29,9 +29,9 @@ steps:
  
   - task: CopyFiles@2
     inputs:
-      SourceFolder: '$(Build.SourcesDirectory)/playwright-report'
+      SourceFolder: '$(Build.SourcesDirectory)/artifacts'
       Contents: '**'
-      TargetFolder: '$(Build.ArtifactStagingDirectory)/playwright-report'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)/artifacts'
  
   - task: PublishBuildArtifacts@1
     inputs:
