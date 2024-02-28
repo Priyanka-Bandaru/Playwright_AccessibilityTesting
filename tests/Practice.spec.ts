@@ -4,7 +4,7 @@ import {AxeBuilder} from '@axe-core/playwright';
 import { createHtmlReport } from 'axe-html-reporter';
 const fs = require('fs');
   test('should not have any automatically detectable accessibility issues', async ({ page }) => {
-    await page.goto('https://www.gcreddy.com/2021/08/healthcare-domain-knowledge.html'); // 3
+    await page.goto('https://www.twitter.com/'); // 3
  
     const accessibilityScanResults = await new AxeBuilder({ page }).analyze(); // 4
     const reportHTML = createHtmlReport({
@@ -14,11 +14,11 @@ const fs = require('fs');
       },
     });
  
-    if (!fs.existsSync("build/reports/accessibility-report.html")) {
-      fs.mkdirSync("build/reports", {
-        recursive: true,
-      });
-    }
-    fs.writeFileSync("build/reports/accessibility-report.html", reportHTML);
+    // if (!fs.existsSync("build/reports/accessibility-report.html")) {
+    //   fs.mkdirSync("build/reports", {
+    //     recursive: true,
+    //   });
+    // }
+    // fs.writeFileSync("build/reports/accessibility-report.html", reportHTML);
     //expect(accessibilityScanResults.violations).toEqual([]); // 5
   });
